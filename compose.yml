@@ -1,0 +1,16 @@
+services:
+  svc1:
+    image: karthik6292/login
+    ports:
+      - "8087:80"
+  svc2:
+    build: ./food
+    image: karthik6292/food
+    ports:
+       - "8088:80"
+  svc3:
+    image: nginx
+    ports:
+       - "8089:80"
+    volumes:
+      - /home/ubuntu/app-services/ecomm:/usr/share/nginx/html

@@ -11,4 +11,4 @@ spec:
   - name: test2
     image: ubuntu
     command: ["sleep"]
-    arg: ["3600"]
+    args: ["3600"]

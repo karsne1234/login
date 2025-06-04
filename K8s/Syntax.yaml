@@ -1,0 +1,21 @@
+dictonary: 
+  key: value
+  key: value
+  key: value
+
+person:
+  name: karthik
+  country: india
+  gender: male
+
+# list - multiple items
+
+list:
+- item1
+- item2
+- item3
+
+Course:
+- devops
+- aws
+- azure

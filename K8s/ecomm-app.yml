@@ -1,0 +1,16 @@
+# Deployment
+deployment:
+  name: ecomm
+  replicas: 1
+  label: ecomm
+  container: ecomm-app
+  image: ravi2krishna/ecomm
+  port: 80
+
+# Service
+service:
+  name: ecomm-svc
+  type: NodePort
+  label: ecomm
+  port: 80
+  nodeport: 30008

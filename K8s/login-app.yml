@@ -1,0 +1,16 @@
+# Deployment
+deployment:
+  name: login
+  replicas: 1
+  label: login
+  container: login-app
+  image: karthik6292/login:latest
+  port: 80
+
+# Service
+service:
+  name: login-svc
+  type: NodePort
+  label: login
+  port: 80
+  nodeport: 30007
